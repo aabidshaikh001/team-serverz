@@ -43,7 +43,7 @@ function Register() {
   const handleSubmit =async(e)=>{
     e.preventDefault()
     e.stopPropagation()
-    const URL = `http://localhost:5600/api/register`
+    const URL = `https://team-serverz.onrender.com/api/register`
     try {
       const response = await axios.post(URL,data)
       console.log("response",response);

@@ -52,7 +52,7 @@ function Edituserdetails({onClose,user}) {
         e.preventDefault()
         e.stopPropagation()
         try {
-             const URL =  `http://localhost:5600/api/update-user`
+             const URL =  `https://team-serverz.onrender.com/api/update-user`
             const response = await axios({
                 method:'post',
                 url:URL,

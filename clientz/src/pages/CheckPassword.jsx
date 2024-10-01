@@ -36,7 +36,7 @@ function CheckPassword() {
   const handleSubmit =async(e)=>{
     e.preventDefault()
     e.stopPropagation()
-    const URL = `http://localhost:5600/api/password`
+    const URL = `https://team-serverz.onrender.com/api/password`
     
     try {
       const response = await axios({

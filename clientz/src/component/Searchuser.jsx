@@ -10,7 +10,7 @@ function Searchuser({onClose}) {
   const [loading, setloading] = useState(false)
   const [search, setsearch] = useState("")
   const handleSearchuser = async()=>{
-     const URL = `http://localhost:5600/api/search-user`
+     const URL = `https://team-serverz.onrender.com/api/search-user`
    try {
     setloading(true)
     const response = await axios.post(URL,{

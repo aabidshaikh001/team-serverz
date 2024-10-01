@@ -22,7 +22,7 @@ function CheckEmail() {
   const handleSubmit =async(e)=>{
     e.preventDefault()
     e.stopPropagation()
-    const URL = `http://localhost:5600/api/email`
+    const URL = `https://team-serverz.onrender.com/api/email`
     try {
       const response = await axios.post(URL,data)
       // console.log("response",response);

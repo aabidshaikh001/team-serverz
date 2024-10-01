@@ -18,7 +18,7 @@ function Home() {
   
   const fetchUserDetails = async()=>{
     try {
-         const URL = `http://localhost:5600/api/user-details`
+         const URL = `https://team-serverz.onrender.com/api/user-details`
          const response = await axios({
           url:URL,
           withCredentials:true
@@ -41,7 +41,7 @@ function Home() {
   },[])
   /**soket connection */
   useEffect(()=>{
-    const socketConnection = io(`http://localhost:5600`,{
+    const socketConnection = io(`https://team-serverz.onrender.com`,{
       auth:{
         token: localStorage.getItem('token')
       }
